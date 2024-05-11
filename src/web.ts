@@ -6,7 +6,9 @@ export class JdApplePayWeb extends WebPlugin implements JdApplePayPlugin {
   /**
    * Check if device can make payments.
    */
-  async canMakePayment(): Promise<boolean> {
+  async canMakePayment(): Promise<{
+    success: boolean;
+  }> {
     throw new Error('Not implemented');
   }
 

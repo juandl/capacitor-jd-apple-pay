@@ -46,10 +46,10 @@ npx cap sync
 ### canMakePayment()
 
 ```typescript
-canMakePayment() => Promise<boolean>
+canMakePayment() => Promise<{ success: boolean; }>
 ```
 
-**Returns:** <code>Promise&lt;boolean&gt;</code>
+**Returns:** <code>Promise&lt;{ success: boolean; }&gt;</code>
 
 --------------------
 

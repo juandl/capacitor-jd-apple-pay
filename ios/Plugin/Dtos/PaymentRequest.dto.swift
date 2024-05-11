@@ -61,6 +61,7 @@ class ApplePayPaymentRequestDto: Codable {
     
     func createRequest() -> PKPaymentRequest {
         let request = PKPaymentRequest()
+        
         request.merchantIdentifier = merchantIdentifier
         request.countryCode = countryCode
         request.currencyCode = currencyCode

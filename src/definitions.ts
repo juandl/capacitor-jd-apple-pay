@@ -25,18 +25,22 @@ export interface ApplePayPaymentRequest {
 }
 
 export interface ApplePayResponseRequest {
-    paymentData?: string;
-    transactionIdentifier: string;
+  paymentData?: string;
+  transactionIdentifier: string;
 }
 
 export interface ApplePayCompleteRequest {
-  status: 'success' | 'failure'
+  status: 'success' | 'failure';
 }
 
 export type ApplePayCanMakePayments = boolean;
 
 export interface JdApplePayPlugin {
-  canMakePayment(): Promise<boolean>;
+  canMakePayment(): Promise<{
+    success: boolean;
+  }>;
   completePayment(params: ApplePayCompleteRequest): Promise<void>;
-  requestPayment(params: ApplePayPaymentRequest): Promise<ApplePayResponseRequest>;
+  requestPayment(
+    params: ApplePayPaymentRequest,
+  ): Promise<ApplePayResponseRequest>;
 }
