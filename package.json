@@ -1,6 +1,6 @@
 {
   "name": "capacitor-jd-apple-pay",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This plugin offers intuitive interfaces enabling you to seamlessly trigger an Apple Pay payment sheet.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
