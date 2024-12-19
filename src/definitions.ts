@@ -3,6 +3,7 @@ export declare type ApplePaySupportedNetworks =
   | 'discover'
   | 'JCB'
   | 'masterCard'
+  | 'mada'
   | 'visa';
 
 export type ApplePayMerchantCapability =

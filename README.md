@@ -122,12 +122,12 @@ requestPayment(params: ApplePayPaymentRequest) => Promise<ApplePayResponseReques
 
 #### ApplePaySupportedNetworks
 
-<code>'amex' | 'discover' | 'JCB' | 'masterCard' | 'visa'</code>
+<code>'amex' | 'discover' | 'JCB' | 'masterCard' | 'mada' | 'visa'</code>
 
 
 #### ApplePayLineItem
 
-<code>{ amount: string; label: string; }</code>
+<code>{ amount: string; label: string; }</code>
 
 </docgen-api>
 
